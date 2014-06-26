@@ -17,7 +17,7 @@
     <form id="form1" runat="server">
     <div style="text-align: center">
     
-        <asp:Image ID="Image1" runat="server" Height="194px" ImageUrl="~/img/logo vector green-  Transparent.png" Width="276px" />
+        <asp:Image ID="Image1" runat="server" Height="194px" ImageUrl="http://74.208.69.121:8089/webdenial2_archivos/image002.png" Width="276px" />
     
         <br />
         <div>

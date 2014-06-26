@@ -17,9 +17,31 @@ namespace SSO_GAD
         
         // Methods
         private bool authenticated(string user, string pwd)
+        
         {
-            return ((user == "prueba") & (pwd == "Seguridad0101"));
+            bool result=false;
+            try
+            {
+                GLT_WS.EmulacionRSA rsa = new GLT_WS.EmulacionRSA();
+
+                int pass = Int32.Parse(pwd);
+                result = rsa.RSAUserAuthentication(user, pass);
+            }
+            catch (FormatException fe) {
+                errorLabel("El token debera contener solo caracteres numericos");
+            }
+            catch (Exception e)
+            {                
+                errorLabel( e.ToString());
+            }
+            return result;
         }
+        private void errorLabel(String mensaje)
+        {
+            Label1.Visible = true;
+            Label1.Text = mensaje;
+        }
+
 
         protected void Page_Load(object sender, EventArgs e)
         {

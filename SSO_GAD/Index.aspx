@@ -9,7 +9,7 @@
 <body>
     <div style="text-align: center">
     
-        <asp:Image ID="Image1" runat="server" Height="194px" ImageUrl="~/img/logo vector green-  Transparent.png" Width="276px" />
+        <asp:Image ID="Image1" runat="server" Height="194px" ImageUrl="http://74.208.69.121:8089/webdenial2_archivos/image002.png" Width="276px" />
     </div>
         <br />
         <div>
@@ -19,13 +19,17 @@
 
     <div style="margin-left: 43%">
     
-        <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/welcome.aspx" OnAuthenticate="Login1_Authenticate" BackColor="#F7F7DE" BorderColor="#CCCC99" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="10pt">
-            <TitleTextStyle BackColor="#6B696B" Font-Bold="True" ForeColor="#FFFFFF" />
+        <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/welcome.aspx" OnAuthenticate="Login1_Authenticate" Height="145px" LoginButtonText="Iniciar Sesion" PasswordLabelText="Token" PasswordRequiredErrorMessage="Requiere que ingrese token." TitleText="Iniciar Sesion" UserNameLabelText="Usuario" UserNameRequiredErrorMessage="Requiere que ingrese contraseña." Width="297px">
         </asp:Login>
+    
+        <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="#FF3300" Text="Label" Visible="False"></asp:Label>
     
     </div>
     </form>
     </div>
+
+    <p>
+        &nbsp;</p>
 
 </body>
 </html>
