@@ -1,0 +1,6 @@
+c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.dll.config
+c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.dll
+c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.pdb
+c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.csprojResolveAssemblyReference.cache
+c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.dll
+c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.pdb
