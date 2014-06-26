@@ -131,7 +131,8 @@ namespace SSO_GAD
             if (!base.IsPostBack)
             {
                 Username = this.Session["user"].ToString().Trim();
-                Pass = this.Session["pass"].ToString().Trim();
+                //Pass = this.Session["pass"].ToString().Trim();
+                Pass = Properties.Settings.Default.GADPass;
                 this.Label1.Text = "Bienvenido " + Username;
             }
             try

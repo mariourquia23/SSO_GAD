@@ -28,7 +28,7 @@ namespace SSO_GAD
                 result = rsa.RSAUserAuthentication(user, pass);
             }
             catch (FormatException fe) {
-                errorLabel("El token debera contener solo caracteres numericos");
+                errorLabel("Formato Token Invalido");
             }
             catch (Exception e)
             {                
@@ -38,14 +38,17 @@ namespace SSO_GAD
         }
         private void errorLabel(String mensaje)
         {
-            Label1.Visible = true;
-            Label1.Text = mensaje;
+            Login1.FailureText = mensaje;
+            
+
+            //Label1.Visible = true;
+            //Label1.Text = mensaje;
         }
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
@@ -53,6 +56,7 @@ namespace SSO_GAD
             if (this.authenticated(this.Login1.UserName, this.Login1.Password))
             {
                 this.Session["user"] = this.Login1.UserName;
+                
                 this.Session["pass"] = this.Login1.Password;
                 e.Authenticated = true;
             }

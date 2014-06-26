@@ -32,5 +32,14 @@ namespace SSO_GAD.Properties {
                 return ((string)(this["SSO_GAD_GLT_WS_EmulacionRSA"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Firefox0101")]
+        public string GADPass {
+            get {
+                return ((string)(this["GADPass"]));
+            }
+        }
     }
 }

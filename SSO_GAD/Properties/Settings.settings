@@ -5,5 +5,8 @@
     <Setting Name="SSO_GAD_GLT_WS_EmulacionRSA" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://74.208.202.242:8050/emulacionRSA.asmx</Value>
     </Setting>
+    <Setting Name="GADPass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Firefox0101</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
