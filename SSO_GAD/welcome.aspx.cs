@@ -10,6 +10,7 @@ using System.Net.Security;
 using System.Net;
 using System.Text;
 using System.IO;
+using System.Security.Cryptography;
 
 
 
@@ -27,6 +28,7 @@ namespace SSO_GAD
         public static string Pass;
         //protected TextBox TextBox1;
         public static string Username;
+        private String claveCifrado="Glt2014web";
 
         // Methods
         public bool AcceptAllCertifications(object sender, X509Certificate certification, X509Chain chain, SslPolicyErrors sslPolicyErrors)
@@ -133,13 +135,18 @@ namespace SSO_GAD
             {
                 Username = this.Session["user"].ToString().Trim();
                 //Pass = this.Session["pass"].ToString().Trim();
-                Pass = Properties.Settings.Default.GADPass;
+                Pass = descifrar(Properties.Settings.Default.GADPass);
                 this.Label1.Text = "Bienvenido " + Username;
             }
             try
             {
+
+                /*//comienzo de cifrado
+                String passCifrada = cifrar(Properties.Settings.Default.GADPass);
+                
+                //fin de cifrado*/
                 string url = "https://s361717226.onlinehome.us:8080/login";
-                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(this.AcceptAllCertifications);
+                ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(this.AcceptAllCertifications);                             
                 this.metodo1(url);
             }
             catch (Exception exception)
@@ -159,6 +166,56 @@ namespace SSO_GAD
             };
             HttpContext.Current.Response.Cookies.Add(cookie);
         }
+
+        public string cifrar(string cadena)
+        {
+
+            byte[] llave; //Arreglo donde guardaremos la llave para el cifrado 3DES.
+
+            byte[] arreglo = UTF8Encoding.UTF8.GetBytes(cadena); //Arreglo donde guardaremos la cadena descifrada.
+
+            // Ciframos utilizando el Algoritmo MD5.
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+            llave = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(claveCifrado));
+            md5.Clear();
+
+            //Ciframos utilizando el Algoritmo 3DES.
+            TripleDESCryptoServiceProvider tripledes = new TripleDESCryptoServiceProvider();
+            tripledes.Key = llave;
+            tripledes.Mode = CipherMode.ECB;
+            tripledes.Padding = PaddingMode.PKCS7;
+            ICryptoTransform convertir = tripledes.CreateEncryptor(); // Iniciamos la conversión de la cadena
+            byte[] resultado = convertir.TransformFinalBlock(arreglo, 0, arreglo.Length); //Arreglo de bytes donde guardaremos la cadena cifrada.
+            tripledes.Clear();
+
+            return Convert.ToBase64String(resultado, 0, resultado.Length); // Convertimos la cadena y la regresamos.
+        }
+        public string descifrar(string cadena)
+        {
+
+            byte[] llave;
+
+            byte[] arreglo = Convert.FromBase64String(cadena); // Arreglo donde guardaremos la cadena descovertida.
+
+            // Ciframos utilizando el Algoritmo MD5.
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+            llave = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(claveCifrado));
+            md5.Clear();
+
+            //Ciframos utilizando el Algoritmo 3DES.
+            TripleDESCryptoServiceProvider tripledes = new TripleDESCryptoServiceProvider();
+            tripledes.Key = llave;
+            tripledes.Mode = CipherMode.ECB;
+            tripledes.Padding = PaddingMode.PKCS7;
+            ICryptoTransform convertir = tripledes.CreateDecryptor();
+            byte[] resultado = convertir.TransformFinalBlock(arreglo, 0, arreglo.Length);
+            tripledes.Clear();
+
+            string cadena_descifrada = UTF8Encoding.UTF8.GetString(resultado); // Obtenemos la cadena
+            return cadena_descifrada; // Devolvemos la cadena
+        }
+
+
 
 
 

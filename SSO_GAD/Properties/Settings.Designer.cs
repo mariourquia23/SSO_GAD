@@ -35,7 +35,7 @@ namespace SSO_GAD.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Firefox0101")]
+        [global::System.Configuration.DefaultSettingValueAttribute("30eRoTAvrn2AcYBzjj+HWw==")]
         public string GADPass {
             get {
                 return ((string)(this["GADPass"]));
