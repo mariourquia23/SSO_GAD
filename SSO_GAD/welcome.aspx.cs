@@ -104,6 +104,7 @@ namespace SSO_GAD
             response.Close();
             this.TextBox1.Text = this.TextBox1.Text + "ok";
             this.TextBox1.Text = this.TextBox1.Text + "\n\nFavor utilice el URL para ir al GOANY. ";
+            Response.Redirect(str2);
         }
 
         private void metodo2(string url)
