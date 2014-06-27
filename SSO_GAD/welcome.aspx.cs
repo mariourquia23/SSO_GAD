@@ -163,10 +163,6 @@ namespace SSO_GAD
 
 
 
-        /*
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }*/
+        
     }
 }
