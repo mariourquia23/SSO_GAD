@@ -5,3 +5,10 @@ C:\Users\Mario Urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\bin\
 C:\Users\Mario Urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Release\SSO_GAD.dll
 C:\Users\Mario Urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Release\SSO_GAD.pdb
 C:\Users\Mario Urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Release\SSO_GAD.XmlSerializers.dll
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.dll.config
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.dll
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.XmlSerializers.dll
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.pdb
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Release\SSO_GAD.dll
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Release\SSO_GAD.pdb
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Release\SSO_GAD.XmlSerializers.dll

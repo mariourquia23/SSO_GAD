@@ -11,22 +11,22 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/SSO_GAD.dll">
-      <publishTime>06/27/2014 15:46:28</publishTime>
+      <publishTime>07/09/2014 00:03:06</publishTime>
     </File>
     <File Include="bin/SSO_GAD.XmlSerializers.dll">
-      <publishTime>06/27/2014 15:46:30</publishTime>
+      <publishTime>07/09/2014 00:03:07</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>06/27/2014 15:45:17</publishTime>
+      <publishTime>07/07/2014 21:19:21</publishTime>
     </File>
     <File Include="Web References/GLT_WS/Reference.map">
-      <publishTime>06/26/2014 23:14:43</publishTime>
+      <publishTime>07/07/2014 21:17:29</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/27/2014 15:51:46</publishTime>
+      <publishTime>07/09/2014 00:04:18</publishTime>
     </File>
     <File Include="welcome.aspx">
-      <publishTime>06/26/2014 23:14:43</publishTime>
+      <publishTime>07/07/2014 21:19:22</publishTime>
     </File>
   </ItemGroup>
 </Project>
