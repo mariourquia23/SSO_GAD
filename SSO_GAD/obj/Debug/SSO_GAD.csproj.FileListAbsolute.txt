@@ -10,3 +10,5 @@ C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO
 C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.csprojResolveAssemblyReference.cache
 C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.dll
 C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.pdb
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\log4net.dll
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\log4net.xml

@@ -148,10 +148,10 @@ input[type=submit]:active {
 
     
     
-        <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/welcome.aspx" OnAuthenticate="Login1_Authenticate"  LoginButtonText="Enviar" PasswordLabelText="Token" PasswordRequiredErrorMessage="Requiere Token." TitleText="" UserNameLabelText="Usuario" UserNameRequiredErrorMessage="Requiere Contraseña." DisplayRememberMe="False" FailureText="Usuario o Toke Incorrecto" TextLayout="TextOnTop" >
+        <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/welcome.aspx" OnAuthenticate="Login1_Authenticate"  LoginButtonText="Enviar" PasswordLabelText="Token" PasswordRequiredErrorMessage="Requiere Token." TitleText="" UserNameLabelText="Usuario" UserNameRequiredErrorMessage="Requiere Contraseña." DisplayRememberMe="False" FailureText="Usuario o Token Incorrecto" TextLayout="TextOnTop" >
             <FailureTextStyle HorizontalAlign="Center" />
         </asp:Login>
-    <div id="lower">
+    <div id="lowers">
               
     
     </div>

@@ -11,8 +11,11 @@ using System.Net;
 using System.Text;
 using System.IO;
 using System.Security.Cryptography;
-//using System.DirectoryServices.Protocols;
 using System.DirectoryServices;
+using log4net;
+using log4net.Config;
+using System.Reflection;
+
 
 
 namespace SSO_GAD
@@ -23,6 +26,7 @@ namespace SSO_GAD
 
         public static string Pass;
         public static string Username;
+        private readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
         // Methods
         public bool AcceptAllCertifications(object sender, X509Certificate certification, X509Chain chain, SslPolicyErrors sslPolicyErrors)
@@ -63,6 +67,7 @@ namespace SSO_GAD
             byte[] bytes = encoding.GetBytes(s);
             CookieContainer container = new CookieContainer();
             this.TextBox1.Text = this.TextBox1.Text + "\nCreando HttpRequest...";
+            this.log.Debug("Creando HttpRequest...");
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.Method = "POST";
@@ -71,11 +76,13 @@ namespace SSO_GAD
             request.CookieContainer = container;
             this.TextBox1.Text = this.TextBox1.Text + "ok";
             this.TextBox1.Text = this.TextBox1.Text + "\nEnviando Parametros...";
+            this.log.Debug("Enviando Parametros...");
             Stream requestStream = request.GetRequestStream();
             requestStream.Write(bytes, 0, bytes.Length);
             requestStream.Close();
             this.TextBox1.Text = this.TextBox1.Text + "ok";
             this.TextBox1.Text = this.TextBox1.Text + "\nCreando HttpRequest...";
+            this.log.Debug("Creando HttpRequest...");
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             StreamReader reader = new StreamReader(response.GetResponseStream());
             this.TextBox1.Text = this.TextBox1.Text + "ok";
@@ -89,20 +96,22 @@ namespace SSO_GAD
                 }
             }
             this.TextBox1.Text = this.TextBox1.Text + "\nRecibiendo respuesta  del Sitio \n comienzo...";
+            this.log.Debug("Recibiendo respuesta  del Sitio \n comienzo...");
             this.TextBox1.Text = this.TextBox1.Text + reader.ReadToEnd();
             this.TextBox1.Text = this.TextBox1.Text + "\n  fin.";
             this.TextBox1.Text = this.TextBox1.Text + "\nEstableciendo URL...";
-            
+            this.log.Debug("Estableciendo URL...");
             String str2 = String.Format("{0};jsessionid={1}", Properties.Settings.Default.WebClient_URL_SSO,cookie);
-           
+            this.log.Debug("URL>>"+ str2);
             this.TextBox1.Text = this.TextBox1.Text + "ok\n";
             this.HyperLink1.NavigateUrl = str2;
             this.TextBox1.Text = this.TextBox1.Text + "\nCerrando conexiones...";
+            this.log.Debug("Cerrando conexiones...");
             reader.Close();
             response.Close();
             this.TextBox1.Text = this.TextBox1.Text + "ok";
             this.TextBox1.Text = this.TextBox1.Text + "\n\nFavor utilice el URL para ir al GOANY. ";
-            //Response.Redirect(str2);
+            Response.Redirect(str2,false);
         }
 
 
@@ -110,9 +119,14 @@ namespace SSO_GAD
         {
             if (!base.IsPostBack)
             {
+                this.log.Debug("Recibiendo Datos");
                 Username = this.Session["user"].ToString().Trim();
+                this.log.Debug(String.Format("Usuario {0}",Username));
+                this.log.Debug("Recuperando Contraseña");
                 Pass = RetrievePassFromLDAP(Username);
+                this.log.Debug("Contraseña recuperada ");
                 this.Label1.Text = "Bienvenido " + Username;
+
             }
             try
             {
@@ -124,20 +138,22 @@ namespace SSO_GAD
             catch (Exception exception)
             {
                 this.TextBox1.Text = "\t\t*****ERROR****\n  " + exception.ToString();
+                this.log.Error(exception.ToString());
             }
         }
         private String RetrievePassFromLDAP(String user)
         {
-
+            this.log.Debug("Leyendo Parametros");
             String path = String.Format("LDAP://{0}:{1}/{2}",
                 Properties.Settings.Default.LDAP_Host,
                 Properties.Settings.Default.LDAP_Port,
                 Properties.Settings.Default.LDAP_DNBase);
             
+
             DirectoryEntry nRoot = new DirectoryEntry(path);
             nRoot.AuthenticationType = AuthenticationTypes.Anonymous;
             //nRoot.Username = "cn=Manager,dc=maxcrc,dc=com";
-            //nRoot.Password = "secret";
+            //nRoot.Password = "secret";            
             DirectorySearcher nDS = new DirectorySearcher(nRoot);
             nDS.SearchScope = SearchScope.Subtree;
             nDS.Filter = String.Format("uid={0}",Username);
