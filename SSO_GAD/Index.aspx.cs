@@ -32,6 +32,7 @@ namespace SSO_GAD
                 this.log.Debug("Comenzando autenticacion con RSA");
                 result = rsa.autenticarRSA(pass, user);
                 this.log.Debug("Fin autenticacion RSA = "+ result.ToString());
+                
             }
             catch (FormatException ) {
                 errorLabel("Formato Token Invalido");
@@ -41,6 +42,7 @@ namespace SSO_GAD
             {                
                 //errorLabel( e.ToString());
                 this.log.Error(e.ToString());
+                
             }
             return result;
         }

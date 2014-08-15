@@ -16,6 +16,15 @@ html, body {
     -webkit-font-smoothing: antialiased;
     background: #f0f0f0;
 }
+#logo{
+    padding-top:8%;
+    margin: 0 auto;
+    top: 15%;
+    left: 50%;
+    width: 80px;
+    
+    align-items:center;
+}
 #container {
     position: fixed;
     width: 340px;
@@ -30,6 +39,7 @@ html, body {
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
 	
 }
+
 form {
     margin: 0 auto;
     margin-top: 20px;
@@ -136,11 +146,10 @@ input[type=submit]:active {
 </style>
 </head>
 <body>
-    <div style="text-align: center">
+    <div id="logo">
     
-        <asp:Image ID="Image1" runat="server" Height="194px" ImageUrl="http://74.208.69.121:8089/webdenial2_archivos/image002.png" Width="276px" />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png"  />
     </div>
-        <br />
        
 
     <div id="container" >
@@ -157,11 +166,6 @@ input[type=submit]:active {
     </div>
     </form>
         </div>
-
-
-
-    <p>
-        &nbsp;</p>
 
 </body>
 </html>
