@@ -67,24 +67,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\GTL.pubxml" />
+    <None Include="Properties\PublishProfiles\LOCAL.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Web References\GLT_WS\emulacionRSA.wsdl" />
-    <None Include="Web References\GLT_WS\Reference.map">
+    <None Include="Web References\co.gov.banrep.osb\AdministradorRSAWS.wsdl" />
+    <None Include="Web References\co.gov.banrep.osb\AdministradorRSAWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\co.gov.banrep.osb\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Web References\co.gov.banrep.osb\respuestaWSAutenticarUsuarioRSA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web References\GLT_WS\emulacionRSA.disco" />
+    <Content Include="img\logo.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -106,7 +115,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Web References\GLT_WS\Reference.cs">
+    <Compile Include="Web References\co.gov.banrep.osb\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -126,18 +135,19 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://74.208.202.242:8050/emulacionRSA.asmx">
+    <WebReferenceUrl Include="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/AdministradorRSA%3fWSDL">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\GLT_WS\</RelPath>
-      <UpdateFromURL>http://74.208.202.242:8050/emulacionRSA.asmx</UpdateFromURL>
+      <RelPath>Web References\co.gov.banrep.osb\</RelPath>
+      <UpdateFromURL>http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/AdministradorRSA%3fWSDL</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>SSO_GAD_GLT_WS_EmulacionRSA</CachedSettingsPropName>
+      <CachedSettingsPropName>SSO_GAD_co_gov_banrep_osb_AdministradorRSAWS</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -149,11 +159,12 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>59626</DevelopmentServerPort>
+          <DevelopmentServerPort>51322</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59626/</IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

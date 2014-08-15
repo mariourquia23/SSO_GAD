@@ -4,11 +4,22 @@ c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\bin\
 c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.csprojResolveAssemblyReference.cache
 c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.dll
 c:\users\mario urquia\documents\visual studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.pdb
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\SSO_GAD.dll
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\SSO_GAD.pdb
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\mscorlib.dll
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\es\mscorlib.resources.dll
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\normidna.nlp
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\normnfc.nlp
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\normnfd.nlp
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\normnfkc.nlp
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\bin\normnfkd.nlp
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.csprojResolveAssemblyReference.cache
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.dll
+D:\Proyectos\GTA\2013\CodigoRSA\SSO_GAD\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.pdb
 C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.dll.config
 C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.dll
 C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\SSO_GAD.pdb
-C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.csprojResolveAssemblyReference.cache
-C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.dll
-C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.pdb
 C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\log4net.dll
 C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\bin\log4net.xml
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.dll
+C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\Debug\SSO_GAD.pdb

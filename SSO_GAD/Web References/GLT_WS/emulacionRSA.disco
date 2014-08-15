@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
-  <contractRef ref="http://74.208.202.242:8050/emulacionRSA.asmx?wsdl" docRef="http://74.208.202.242:8050/emulacionRSA.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
-  <soap address="http://74.208.202.242:8050/emulacionRSA.asmx" xmlns:q1="http://s16988306.onlineus.com:8050/" binding="q1:EmulacionRSASoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
-  <soap address="http://74.208.202.242:8050/emulacionRSA.asmx" xmlns:q2="http://s16988306.onlineus.com:8050/" binding="q2:EmulacionRSASoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
-</discovery>

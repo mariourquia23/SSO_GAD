@@ -25,52 +25,6 @@ namespace SSO_GAD.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://74.208.202.242:8050/emulacionRSA.asmx")]
-        public string SSO_GAD_GLT_WS_EmulacionRSA {
-            get {
-                return ((string)(this["SSO_GAD_GLT_WS_EmulacionRSA"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("30eRoTAvrn2AcYBzjj+HWw==")]
-        public string GADPass {
-            get {
-                return ((string)(this["GADPass"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://s361717226.onlinehome.us:8080/login")]
-        public string WebClient_URL {
-            get {
-                return ((string)(this["WebClient_URL"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("74.208.202.242")]
-        public string LDAP_Host {
-            get {
-                return ((string)(this["LDAP_Host"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("dc=maxcrc,dc=com")]
-        public string LDAP_DNBase {
-            get {
-                return ((string)(this["LDAP_DNBase"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("389")]
         public string LDAP_Port {
             get {
@@ -80,7 +34,34 @@ namespace SSO_GAD.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("telephoneNumber")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://wprugtaf1d/login")]
+        public string WebClient_URL {
+            get {
+                return ((string)(this["WebClient_URL"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.12.69")]
+        public string LDAP_Host {
+            get {
+                return ((string)(this["LDAP_Host"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("dc=banrep,dc=gov,dc=co")]
+        public string LDAP_DNBase {
+            get {
+                return ((string)(this["LDAP_DNBase"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("password1")]
         public string LDAP_AttributePass {
             get {
                 return ((string)(this["LDAP_AttributePass"]));
@@ -89,10 +70,20 @@ namespace SSO_GAD.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://s361717226.onlinehome.us:8080/webclient/WebClient.jsf")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://wprugtaf1d/webclient/WebClient.jsf")]
         public string WebClient_URL_SSO {
             get {
                 return ((string)(this["WebClient_URL_SSO"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/AdministradorRSA")]
+        public string SSO_GAD_co_gov_banrep_osb_AdministradorRSAWS {
+            get {
+                return ((string)(this["SSO_GAD_co_gov_banrep_osb_AdministradorRSAWS"]));
             }
         }
     }

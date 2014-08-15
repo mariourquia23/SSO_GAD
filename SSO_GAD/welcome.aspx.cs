@@ -117,6 +117,8 @@ namespace SSO_GAD
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
             if (!base.IsPostBack)
             {
                 this.log.Debug("Recibiendo Datos");
@@ -128,8 +130,7 @@ namespace SSO_GAD
                 this.Label1.Text = "Bienvenido " + Username;
 
             }
-            try
-            {
+            
 
                 string url = Properties.Settings.Default.WebClient_URL;
                 ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(this.AcceptAllCertifications);                             
@@ -153,7 +154,8 @@ namespace SSO_GAD
             DirectoryEntry nRoot = new DirectoryEntry(path);
             nRoot.AuthenticationType = AuthenticationTypes.Anonymous;
             //nRoot.Username = "cn=Manager,dc=maxcrc,dc=com";
-            //nRoot.Password = "secret";            
+            //nRoot.Password = "secret";      
+      
             DirectorySearcher nDS = new DirectorySearcher(nRoot);
             nDS.SearchScope = SearchScope.Subtree;
             nDS.Filter = String.Format("uid={0}",Username);

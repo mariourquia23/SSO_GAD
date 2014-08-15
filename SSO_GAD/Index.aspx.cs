@@ -26,11 +26,15 @@ namespace SSO_GAD
             bool result=false;
             try
             {
-                GLT_WS.EmulacionRSA rsa = new GLT_WS.EmulacionRSA();
-
-                int pass = Int32.Parse(pwd);
+                 co.gov.banrep.osb.peticionWSAutenticarUsuarioRSA peticion = new co.gov.banrep.osb.peticionWSAutenticarUsuarioRSA();
+                 co.gov.banrep.osb.respuestaWSAutenticarUsuarioRSA respuesta = new co.gov.banrep.osb.respuestaWSAutenticarUsuarioRSA();
+                co.gov.banrep.osb.AdministradorRSAWS rsa= new co.gov.banrep.osb.AdministradorRSAWS();
                 this.log.Debug("Comenzando autenticacion con RSA");
-                result = rsa.autenticarRSA(pass, user);
+                peticion.usuario = user.TrimEnd().TrimStart();
+                peticion.passCode = pwd.TrimEnd().TrimStart();
+                respuesta = rsa.autenticarRSA(peticion);
+                result = respuesta.resultado;
+                
                 this.log.Debug("Fin autenticacion RSA = "+ result.ToString());
                 
             }
