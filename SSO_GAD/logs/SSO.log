@@ -1,0 +1,24 @@
+2014-08-19 15:54:33,756 [10] DEBUG SSO_GAD.Index - Comenzando autenticacion con RSA
+2014-08-19 15:54:35,926 [10] ERROR SSO_GAD.Index - System.Net.WebException: The request failed with HTTP status 404: Not Found.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at SSO_GAD.co.gov.banrep.osb.AdministradorRSAWS.autenticarRSA(peticionWSAutenticarUsuarioRSA datosPeticion) in c:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\Web References\co.gov.banrep.osb\Reference.cs:line 80
+   at SSO_GAD.Index.authenticated(String user, String pwd) in c:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\Index.aspx.cs:line 35
+2014-08-19 15:54:35,940 [10] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-08-19 15:55:03,632 [10] DEBUG SSO_GAD.Index - Comenzando autenticacion con RSA
+2014-08-19 15:55:03,805 [10] ERROR SSO_GAD.Index - System.Net.WebException: The request failed with HTTP status 404: Not Found.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at SSO_GAD.co.gov.banrep.osb.AdministradorRSAWS.autenticarRSA(peticionWSAutenticarUsuarioRSA datosPeticion) in c:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\Web References\co.gov.banrep.osb\Reference.cs:line 80
+   at SSO_GAD.Index.authenticated(String user, String pwd) in c:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\Index.aspx.cs:line 35
+2014-08-19 15:55:03,805 [10] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-08-19 15:56:34,560 [7] DEBUG SSO_GAD.Index - Comenzando autenticacion con RSA
+2014-08-19 16:05:18,838 [7] DEBUG SSO_GAD.Index - Comenzando autenticacion con RSA
+2014-08-19 20:43:15,889 [7] DEBUG SSO_GAD.Index - Comenzando autenticacion con RSA
+2014-08-19 20:43:19,270 [7] ERROR SSO_GAD.Index - System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: autenticarRSA.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at SSO_GAD.co.gov.banrep.osb.AdministradorRSAWS.autenticarRSA(peticionWSAutenticarUsuarioRSA datosPeticion) in c:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\Web References\co.gov.banrep.osb\Reference.cs:line 80
+   at SSO_GAD.Index.authenticated(String user, String pwd) in c:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\Index.aspx.cs:line 35
+2014-08-19 20:43:19,270 [7] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-08-19 20:44:43,700 [5] DEBUG SSO_GAD.Index - Comenzando autenticacion con RSA

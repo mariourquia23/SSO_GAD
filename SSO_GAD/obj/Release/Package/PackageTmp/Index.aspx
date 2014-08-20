@@ -147,8 +147,7 @@ input[type=submit]:active {
 </head>
 <body>
     <div id="logo">
-    
-        <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png"  />
+        <img src="img/logo.png" />        
     </div>
        
 
