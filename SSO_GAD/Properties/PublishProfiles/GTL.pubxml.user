@@ -14,22 +14,22 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>11/18/2013 05:51:44</publishTime>
     </File>
     <File Include="bin/SSO_GAD.dll">
-      <publishTime>07/14/2014 23:03:14</publishTime>
+      <publishTime>08/21/2014 16:43:07</publishTime>
     </File>
     <File Include="bin/SSO_GAD.XmlSerializers.dll">
-      <publishTime>07/14/2014 23:03:17</publishTime>
+      <publishTime>08/21/2014 16:43:07</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>07/31/2014 19:33:48</publishTime>
+      <publishTime>08/20/2014 09:44:23</publishTime>
     </File>
     <File Include="Web References/GLT_WS/Reference.map">
       <publishTime>07/07/2014 21:17:29</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/31/2014 17:35:49</publishTime>
+      <publishTime>08/21/2014 16:33:24</publishTime>
     </File>
     <File Include="welcome.aspx">
-      <publishTime>07/07/2014 21:19:22</publishTime>
+      <publishTime>08/15/2014 09:25:01</publishTime>
     </File>
   </ItemGroup>
 </Project>

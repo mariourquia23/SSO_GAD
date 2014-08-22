@@ -15,6 +15,11 @@ using System.DirectoryServices;
 using log4net;
 using log4net.Config;
 using System.Reflection;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web.Security;
+using System.Web.UI.WebControls.WebParts;
 
 
 
@@ -61,18 +66,31 @@ namespace SSO_GAD
 
         private void metodoPost(string url)
         {
+            String cookieName = "JSESSIONID";
+            HttpCookie Jsessionid = new HttpCookie(cookieName);
+            Jsessionid = Request.Cookies[cookieName];
+            if (Jsessionid != null)
+                this.log.Debug(String.Format("El valor de la cookie {0} en el navegador es:{1}", Jsessionid.Name, Jsessionid.Value));
+            else
+                this.log.Debug(String.Format("Cookie {0} NO ENCONTRADA", cookieName));
+            if (Request.Cookies[cookieName] != null)
+            {
+                HttpCookie myCookie = new HttpCookie(cookieName);
+                myCookie.Expires = DateTime.Now.AddDays(-1d);
+                Response.Cookies.Add(myCookie);
+            }
             Uri uri = new Uri(url);
             ASCIIEncoding encoding = new ASCIIEncoding();
-            string s = "username=" + Username + "&password=" + Pass;
-            byte[] bytes = encoding.GetBytes(s);
+            string content = "username=" + Username + "&password=" + Pass;
+            byte[] bytes = encoding.GetBytes(content);
             CookieContainer container = new CookieContainer();
             this.TextBox1.Text = this.TextBox1.Text + "\nCreando HttpRequest...";
             this.log.Debug("Creando HttpRequest...");
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            request.Method = "GET";
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+            //request.Method = "GET";
             request.Method = "POST";
             request.ContentType = "application/x-www-form-urlencoded";
-            request.ContentLength = s.Length;
+            request.ContentLength = content.Length;
             request.CookieContainer = container;
             this.TextBox1.Text = this.TextBox1.Text + "ok";
             this.TextBox1.Text = this.TextBox1.Text + "\nEnviando Parametros...";
@@ -110,7 +128,7 @@ namespace SSO_GAD
             reader.Close();
             response.Close();
             this.TextBox1.Text = this.TextBox1.Text + "ok";
-            this.TextBox1.Text = this.TextBox1.Text + "\n\nFavor utilice el URL para ir al GOANY. ";
+            this.TextBox1.Text = this.TextBox1.Text + "\n\nFavor utilice el URL para ir al GOANY. ";           
             Response.Redirect(str2,false);
         }
 
@@ -169,12 +187,15 @@ namespace SSO_GAD
         {
             HttpCookie cookie = new HttpCookie(c.Name)
             {
+                Name = "JSESSIONID",
                 Value = c.Value,
                 Expires = DateTime.Now.AddDays(1.0),
-                Domain = "." + host,
+                //Domain = "." + host,
+                Domain=host,
                 Path = "/"
             };
             HttpContext.Current.Response.Cookies.Add(cookie);
+            
         }
         
 
