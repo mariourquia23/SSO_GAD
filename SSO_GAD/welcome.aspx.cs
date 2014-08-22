@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.HtmlControls;
-using System.Security.Cryptography.X509Certificates;
-using System.Net.Security;
-using System.Net;
-using System.Text;
-using System.IO;
-using System.Security.Cryptography;
+﻿using log4net;
+using System;
 using System.DirectoryServices;
-using log4net;
-using log4net.Config;
+using System.IO;
+using System.Net;
+using System.Net.Security;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Web;
 
 
 

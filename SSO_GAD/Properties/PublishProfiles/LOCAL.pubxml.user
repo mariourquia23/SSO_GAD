@@ -6,23 +6,26 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\obj\JM</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\JoseMario\Desktop\SSO</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/log4net.dll">
       <publishTime>11/18/2013 05:51:44</publishTime>
     </File>
     <File Include="bin/SSO_GAD.dll">
-      <publishTime>08/15/2014 09:31:52</publishTime>
+      <publishTime>08/22/2014 09:06:21</publishTime>
     </File>
     <File Include="bin/SSO_GAD.XmlSerializers.dll">
-      <publishTime>08/15/2014 09:31:53</publishTime>
+      <publishTime>08/22/2014 09:06:23</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>08/15/2014 10:08:51</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>08/15/2014 09:25:01</publishTime>
+      <publishTime>08/21/2014 21:17:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/15/2014 09:31:55</publishTime>
+      <publishTime>08/22/2014 09:06:24</publishTime>
     </File>
     <File Include="welcome.aspx">
       <publishTime>08/15/2014 09:25:01</publishTime>
