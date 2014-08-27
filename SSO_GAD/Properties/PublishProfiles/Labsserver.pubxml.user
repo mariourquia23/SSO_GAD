@@ -6,27 +6,23 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcuVVvXDGVkCsxCw2qImKCAAAAAACAAAAAAAQZgAAAAEAACAAAABkIKgkUOtC55QGLWqwDO6YcoFPJtt/Jsmb4rw3N9iSnAAAAAAOgAAAAAIAACAAAADMCeWuuGFnl6GJgbMuCGCKdgW6NBqTYQ2ioxowb9MBcxAAAAAdsGQz4jtRF/P32NL0uiesQAAAAPOKbwl1cAG3zBfGoAUWezEU6hBsiLyViQSfDKxGmCzfkkIv1hFeerBCE0Ye/5ZLWZgHmrakvzyG0YpJLPSsgNM=</EncryptedPassword>
-    <_PublishTargetUrl>ftp://74.208.202.242/webSites/HttpRequest</_PublishTargetUrl>
+    <_PublishTargetUrl>\\192.168.1.200\SitiosWeb\HttpRequest</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/log4net.dll">
       <publishTime>11/18/2013 05:51:44</publishTime>
     </File>
     <File Include="bin/SSO_GAD.dll">
-      <publishTime>08/27/2014 11:09:08</publishTime>
+      <publishTime>08/27/2014 11:16:53</publishTime>
     </File>
     <File Include="bin/SSO_GAD.XmlSerializers.dll">
-      <publishTime>08/27/2014 11:09:12</publishTime>
+      <publishTime>08/27/2014 11:16:53</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>08/22/2014 10:17:20</publishTime>
-    </File>
-    <File Include="Web References/GLT_WS/Reference.map">
-      <publishTime>07/07/2014 21:17:29</publishTime>
+      <publishTime>08/22/2014 10:17:19</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/22/2014 10:17:20</publishTime>
+      <publishTime>08/27/2014 11:16:54</publishTime>
     </File>
     <File Include="welcome.aspx">
       <publishTime>08/15/2014 09:25:01</publishTime>
