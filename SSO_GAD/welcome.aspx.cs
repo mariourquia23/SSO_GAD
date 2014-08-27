@@ -117,6 +117,12 @@ namespace SSO_GAD
             response.Close();
             this.TextBox1.Text = this.TextBox1.Text + "ok";
             this.TextBox1.Text = this.TextBox1.Text + "\n\nFavor utilice el URL para ir al GOANY. ";
+            Jsessionid = Request.Cookies[cookieName];
+            if (Jsessionid != null)
+                this.log.Debug(String.Format("El valor de la cookie {0} en el navegador es:{1}", Jsessionid.Name, Jsessionid.Value));
+            else
+                this.log.Debug(String.Format("Cookie {0} NO ENCONTRADA", cookieName));
+
             Response.Redirect(str2,false);
         }
 
@@ -179,8 +185,7 @@ namespace SSO_GAD
             {
                 Name = "JSESSIONID",
                 Value = c.Value,
-                Expires = DateTime.Now.AddDays(1.0),
-                Domain = host,
+                Expires = DateTime.Now.AddDays(1.0),                
                 Path = "/"
                 
             };
