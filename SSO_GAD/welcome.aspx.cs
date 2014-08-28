@@ -148,6 +148,13 @@ namespace SSO_GAD
                 ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(this.AcceptAllCertifications);                             
                 this.metodoPost(url);
             }
+            catch (NullReferenceException objectNull)
+            {
+                //if objectNull.TargetSite.Equals()
+                this.TextBox1.Text = "\t\t*****ERROR****\n";
+                this.TextBox1.Text = "No tenemos registro de contraseña para el usuario solicitado\n" + objectNull.ToString();
+                this.log.Error(objectNull.ToString());
+            }
             catch (Exception exception)
             {
                 this.TextBox1.Text = "\t\t*****ERROR****\n  " + exception.ToString();
