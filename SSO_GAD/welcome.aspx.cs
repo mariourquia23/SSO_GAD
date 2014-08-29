@@ -111,6 +111,7 @@ namespace SSO_GAD
             this.log.Debug("URL>>"+ str2);
             this.TextBox1.Text = this.TextBox1.Text + "ok\n";
             this.HyperLink1.NavigateUrl = str2;
+            this.HyperLink1.Visible = true;
             this.TextBox1.Text = this.TextBox1.Text + "\nCerrando conexiones...";
             this.log.Debug("Cerrando conexiones...");
             reader.Close();
@@ -122,8 +123,8 @@ namespace SSO_GAD
                 this.log.Debug(String.Format("El valor de la cookie {0} en el navegador es:{1}", Jsessionid.Name, Jsessionid.Value));
             else
                 this.log.Debug(String.Format("Cookie {0} NO ENCONTRADA", cookieName));
-
-            Response.Redirect(str2,false);
+            Response.Redirect(str2, true);
+            //Response.Redirect(str2,false);
         }
 
 

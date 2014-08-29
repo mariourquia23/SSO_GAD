@@ -83,6 +83,11 @@
     <None Include="Web References\co.gov.banrep.osb\respuestaWSAutenticarUsuarioRSA.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
+    <None Include="Web References\GLTWS1\emulacionRSA.wsdl" />
+    <Content Include="Web References\GLTWS1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -94,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\logo.png" />
+    <None Include="Web References\GLTWS1\emulacionRSA.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -120,6 +126,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\GLTWS1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="welcome.aspx.cs">
       <DependentUpon>welcome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,6 +146,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <WebReferenceUrl Include="http://74.208.202.242:8050/emulacionRSA.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GLTWS1\</RelPath>
+      <UpdateFromURL>http://74.208.202.242:8050/emulacionRSA.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SSO_GAD_GLTWS1_EmulacionRSA</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/AdministradorRSA%3fWSDL">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\co.gov.banrep.osb\</RelPath>

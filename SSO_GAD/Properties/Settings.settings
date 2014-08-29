@@ -6,22 +6,25 @@
       <Value Profile="(Default)">389</Value>
     </Setting>
     <Setting Name="WebClient_URL" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://wprugtaf1d/login</Value>
+      <Value Profile="(Default)">https://s361717226.onlinehome.us:8080/login</Value>
     </Setting>
     <Setting Name="LDAP_Host" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">192.168.12.69</Value>
+      <Value Profile="(Default)">74.208.202.242</Value>
     </Setting>
     <Setting Name="LDAP_DNBase" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">dc=banrep,dc=gov,dc=co</Value>
+      <Value Profile="(Default)">dc=maxcrc,dc=com</Value>
     </Setting>
     <Setting Name="LDAP_AttributePass" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">password1</Value>
+      <Value Profile="(Default)">telephoneNumber</Value>
     </Setting>
     <Setting Name="WebClient_URL_SSO" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://wprugtaf1d/webclient/WebClient.jsf</Value>
+      <Value Profile="(Default)">https://s361717226.onlinehome.us:8080/webclient/WebClient.jsf</Value>
     </Setting>
     <Setting Name="SSO_GAD_co_gov_banrep_osb_AdministradorRSAWS" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://osb-pruebas.banrep.gov.co:8011/ServiciosS3/AdministradorRSA</Value>
+      <Value Profile="(Default)">http://74.208.202.242:8050/administradorRSAws.asmx</Value>
+    </Setting>
+    <Setting Name="SSO_GAD_GLTWS1_EmulacionRSA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://74.208.202.242:8050/emulacionRSA.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>

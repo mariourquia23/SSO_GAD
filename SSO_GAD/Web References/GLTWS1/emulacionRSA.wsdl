@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://s16988306.onlineus.com:8050/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://s16988306.onlineus.com:8050/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://s16988306.onlineus.com:8050/">
+      <s:element name="autenticarRSA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="passCode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="autenticarRSAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="autenticarRSAResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="autenticarRSASoapIn">
+    <wsdl:part name="parameters" element="tns:autenticarRSA" />
+  </wsdl:message>
+  <wsdl:message name="autenticarRSASoapOut">
+    <wsdl:part name="parameters" element="tns:autenticarRSAResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EmulacionRSASoap">
+    <wsdl:operation name="autenticarRSA">
+      <wsdl:input message="tns:autenticarRSASoapIn" />
+      <wsdl:output message="tns:autenticarRSASoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EmulacionRSASoap" type="tns:EmulacionRSASoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="autenticarRSA">
+      <soap:operation soapAction="http://s16988306.onlineus.com:8050/autenticarRSA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmulacionRSASoap12" type="tns:EmulacionRSASoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="autenticarRSA">
+      <soap12:operation soapAction="http://s16988306.onlineus.com:8050/autenticarRSA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmulacionRSA">
+    <wsdl:port name="EmulacionRSASoap" binding="tns:EmulacionRSASoap">
+      <soap:address location="http://74.208.202.242:8050/emulacionRSA.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EmulacionRSASoap12" binding="tns:EmulacionRSASoap12">
+      <soap12:address location="http://74.208.202.242:8050/emulacionRSA.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
