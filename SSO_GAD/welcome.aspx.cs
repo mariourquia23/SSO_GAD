@@ -11,12 +11,13 @@ using System.Web;
 
 
 
+
 namespace SSO_GAD
 {
     public partial class welcome : System.Web.UI.Page
     {
-
-
+        protected Uri finalURL;
+        protected bool succes = false;
         public static string Pass;
         public static string Username;
         private readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
@@ -112,19 +113,32 @@ namespace SSO_GAD
             this.TextBox1.Text = this.TextBox1.Text + "ok\n";
             this.HyperLink1.NavigateUrl = str2;
             this.HyperLink1.Visible = true;
+            this.finalURL = new Uri(str2);
             this.TextBox1.Text = this.TextBox1.Text + "\nCerrando conexiones...";
             this.log.Debug("Cerrando conexiones...");
             reader.Close();
             response.Close();
             this.TextBox1.Text = this.TextBox1.Text + "ok";
-            this.TextBox1.Text = this.TextBox1.Text + "\n\nFavor utilice el URL para ir al GOANY. ";
+            this.TextBox1.Text = this.TextBox1.Text + "\n\nConexion Exitosa.\n Si no es redireccionado automaticamente favor utilizar el siguiente enlace.";
             Jsessionid = Request.Cookies[cookieName];
             if (Jsessionid != null)
                 this.log.Debug(String.Format("El valor de la cookie {0} en el navegador es:{1}", Jsessionid.Name, Jsessionid.Value));
             else
                 this.log.Debug(String.Format("Cookie {0} NO ENCONTRADA", cookieName));
-            Response.Redirect(str2, true);
-            //Response.Redirect(str2,false);
+            succes = true;
+            //head.InnerHtml = head.InnerHtml + "<meta http-equiv=\"refresh\" content=\"5\" ; url="+finalURL.ToString()+" />";
+            /*Response.Redirect(str2,false);
+            Response.End;
+        */
+
+        }
+        protected String redireccionar()
+        {
+            if (succes)
+            {
+                return String.Format("<meta http-equiv=\"refresh\" content=\"0; url={0}\" />",finalURL.ToString());
+            }
+            return "";
         }
 
 
@@ -193,8 +207,11 @@ namespace SSO_GAD
             {
                 Name = "JSESSIONID",
                 Value = c.Value,
+                //Domain="."+host,
+                //Domain=Request.Url.Host,
                 Expires = DateTime.Now.AddDays(1.0),                
-                Path = "/"
+                Path = "/",
+                Secure=true,
                 
             };
 

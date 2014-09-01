@@ -4,7 +4,7 @@
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head runat="server" id="head">
     <title>GOanySSO portal</title>
     <style type="text/css">
         
@@ -76,10 +76,12 @@ input {
 
 
 
-    </style>
+
+    </style>   
+  <%=redireccionar() %>
 </head>
 <body>
- 
+ <form runat="server">
     <div id="panel">
     
         <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png" />
@@ -90,9 +92,9 @@ input {
             
             
            
-            <form runat="server">
+            
             <asp:TextBox ID="TextBox1" runat="server"   TextMode="MultiLine" ></asp:TextBox>
-            </form>
+            
             
            </div> <div>
              <asp:HyperLink ID="HyperLink1" runat="server" Visible="False">ir a GoAny WebClient</asp:HyperLink>
@@ -100,6 +102,7 @@ input {
             
         </div></div>
     
+</form>    
 </body>
 </html>
 

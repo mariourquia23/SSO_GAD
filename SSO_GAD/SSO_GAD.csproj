@@ -66,8 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\GTL.pubxml" />
-    <None Include="Properties\PublishProfiles\LOCAL.pubxml" />
+    <None Include="Properties\PublishProfiles\Labsserver.pubxml" />
+    <None Include="Properties\PublishProfiles\VPS3.pubxml" />
+    <None Include="Properties\PublishProfiles\Banrep.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,6 +85,10 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\GLTWS1\emulacionRSA.wsdl" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\loader.gif" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Web References\GLTWS1\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

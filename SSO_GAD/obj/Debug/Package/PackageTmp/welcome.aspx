@@ -4,7 +4,7 @@
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head runat="server" id="head">
     <title>GOanySSO portal</title>
     <style type="text/css">
         
@@ -77,6 +77,8 @@ input {
 
 
     </style>
+    
+  <%=redireccionar() %>
 </head>
 <body>
  

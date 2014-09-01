@@ -7,7 +7,7 @@
     <title>GOanySSO portal</title>
 
     <style type="text/css">
-        /* Basics */
+               /* Basics */
         html, body {
             margin:0;
             padding:0;
@@ -162,9 +162,59 @@
                 background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
                 background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
             }
+            .modal
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: 99;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        min-height: 100%;
+        width: 100%;
+    }
+        .loading {
+            font-family: Arial;
+            font-size: 10pt;
+            /*border: 5px solid #67CFF5;
+              border: 1px solid #93b8d8;  
+            box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;*/
+            border: 5px solid #93b8d8; 
+            width: 200px;
+            height: 100px;
+            display: none;
+            position: fixed;
+            background-color: White;
+            z-index: 999;
+        }
+
+
     </style>
+    
+    <script src="Scripts/jquery-1.8.2.min.js"></script>
+
+  <script type="text/javascript">
+      function ShowProgress() {
+          setTimeout(function () {
+              var modal = $('<div />');
+              modal.addClass("modal");
+              $('body').append(modal);
+              var loading = $(".loading");
+              loading.show();
+              var top = Math.max($(window).height() / 2 - loading[0].offsetHeight / 2, 0);
+              var left = Math.max($(window).width() / 2 - loading[0].offsetWidth / 2, 0);
+              loading.css({ top: top, left: left });
+          }, 200);
+      }
+      $('form').live("submit", function () {
+          ShowProgress();
+      });
+</script>
+
 </head>
-<body>
+<body><form id="form2" runat="server">
     <div id="PanelPadre">
     <div id="panel">
         <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png" />
@@ -172,7 +222,7 @@
         <br />
 
         <div id="container">
-            <form id="form2" runat="server">
+            
 
 
 
@@ -232,9 +282,17 @@
                     <FailureTextStyle HorizontalAlign="Center" />
                 </asp:Login>
 
-            </form>
+
+            
         </div>
     </div></div>
+    
+    <div class="loading" align="center">
+    Loading. Please wait.<br />
+    <br />
+    <img src="img/loader.gif" alt="" />
+</div>
 
+</form>
 </body>
 </html>
