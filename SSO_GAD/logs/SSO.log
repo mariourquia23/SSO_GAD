@@ -1,0 +1,113 @@
+2014-09-01 22:44:27,365 [5] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 22:44:27,400 [5] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 22:44:38,471 [5] DEBUG SSO_GAD.Index - Fin autenticacion RSA = False
+2014-09-01 22:44:38,471 [5] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 22:46:53,593 [5] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 22:46:53,618 [5] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 22:50:52,652 [7] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 22:50:52,678 [7] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 22:54:21,992 [7] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 22:54:22,018 [7] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:02:21,984 [6] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:02:22,010 [6] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:05:51,575 [7] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:05:51,601 [7] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:06:04,238 [4] DEBUG SSO_GAD.Index - Fin autenticacion RSA = True
+2014-09-01 23:06:04,278 [4] DEBUG SSO_GAD.Index - Usuario autenticado
+2014-09-01 23:06:04,424 [6] DEBUG SSO_GAD.welcome - Recibiendo Datos
+2014-09-01 23:06:04,425 [6] DEBUG SSO_GAD.welcome - Usuario jurquia
+2014-09-01 23:06:04,425 [6] DEBUG SSO_GAD.welcome - Recuperando Contraseña
+2014-09-01 23:06:04,458 [6] DEBUG SSO_GAD.welcome - Leyendo Parametros
+2014-09-01 23:06:05,148 [6] DEBUG SSO_GAD.welcome - Contraseña recuperada 
+2014-09-01 23:06:05,175 [6] DEBUG SSO_GAD.welcome - Cookie JSESSIONID NO ENCONTRADA
+2014-09-01 23:06:05,198 [6] DEBUG SSO_GAD.welcome - Creando HttpRequest...
+2014-09-01 23:06:05,198 [6] DEBUG SSO_GAD.welcome - Enviando Parametros...
+2014-09-01 23:06:06,347 [6] DEBUG SSO_GAD.welcome - Creando HttpRequest...
+2014-09-01 23:06:06,486 [6] DEBUG SSO_GAD.welcome - Cookie JSESSIONID con valor C24C60DF859005C8E0DEF65C32378CE2 establecida
+2014-09-01 23:06:06,486 [6] DEBUG SSO_GAD.welcome - Recibiendo respuesta  del Sitio 
+ comienzo...
+2014-09-01 23:06:06,486 [6] DEBUG SSO_GAD.welcome - Estableciendo URL...
+2014-09-01 23:06:06,486 [6] DEBUG SSO_GAD.welcome - URL>>https://s361717226.onlinehome.us:8080/webclient/WebClient.jsf;jsessionid=C24C60DF859005C8E0DEF65C32378CE2
+2014-09-01 23:06:06,486 [6] DEBUG SSO_GAD.welcome - Cerrando conexiones...
+2014-09-01 23:06:06,486 [6] DEBUG SSO_GAD.welcome - El valor de la cookie JSESSIONID en el navegador es:C24C60DF859005C8E0DEF65C32378CE2
+2014-09-01 23:07:16,268 [6] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:07:16,294 [6] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:09:17,048 [10] DEBUG SSO_GAD.Index - Fin autenticacion RSA = False
+2014-09-01 23:09:17,081 [10] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:13:51,057 [10] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:13:51,090 [10] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:27:36,275 [6] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:37:18,579 [6] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:37:18,604 [6] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:37:41,247 [7] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:37:41,247 [7] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:37:53,499 [6] DEBUG SSO_GAD.Index - Fin autenticacion RSA = True
+2014-09-01 23:37:53,499 [6] DEBUG SSO_GAD.Index - Usuario autenticado
+2014-09-01 23:37:53,575 [10] DEBUG SSO_GAD.welcome - Recibiendo Datos
+2014-09-01 23:37:53,575 [10] DEBUG SSO_GAD.welcome - Usuario jurquia
+2014-09-01 23:37:53,575 [10] DEBUG SSO_GAD.welcome - Recuperando Contraseña
+2014-09-01 23:37:53,588 [10] DEBUG SSO_GAD.welcome - Leyendo Parametros
+2014-09-01 23:37:54,171 [10] DEBUG SSO_GAD.welcome - Contraseña recuperada 
+2014-09-01 23:37:54,176 [10] DEBUG SSO_GAD.welcome - Cookie JSESSIONID NO ENCONTRADA
+2014-09-01 23:37:54,194 [10] DEBUG SSO_GAD.welcome - Creando HttpRequest...
+2014-09-01 23:37:54,194 [10] DEBUG SSO_GAD.welcome - Enviando Parametros...
+2014-09-01 23:37:54,935 [10] DEBUG SSO_GAD.welcome - Creando HttpRequest...
+2014-09-01 23:37:55,129 [10] DEBUG SSO_GAD.welcome - Cookie JSESSIONID con valor 060F944E02F5385B883B07591671CAA2 establecida
+2014-09-01 23:37:55,129 [10] DEBUG SSO_GAD.welcome - Recibiendo respuesta  del Sitio 
+ comienzo...
+2014-09-01 23:37:55,129 [10] DEBUG SSO_GAD.welcome - Estableciendo URL...
+2014-09-01 23:37:55,130 [10] DEBUG SSO_GAD.welcome - URL>>https://s361717226.onlinehome.us:8080/webclient/WebClient.jsf;jsessionid=060F944E02F5385B883B07591671CAA2
+2014-09-01 23:37:55,130 [10] DEBUG SSO_GAD.welcome - Cerrando conexiones...
+2014-09-01 23:37:55,130 [10] DEBUG SSO_GAD.welcome - El valor de la cookie JSESSIONID en el navegador es:060F944E02F5385B883B07591671CAA2
+2014-09-01 23:38:41,192 [7] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:38:41,227 [7] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:43:06,106 [5] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:43:06,137 [5] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:43:21,847 [5] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:43:21,847 [5] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:44:19,412 [6] DEBUG SSO_GAD.Index - Favor introducir todos sus Datos
+2014-09-01 23:44:27,433 [6] DEBUG SSO_GAD.Index - Favor introducir todos sus Datos
+2014-09-01 23:44:42,281 [7] DEBUG SSO_GAD.Index - Fin autenticacion RSA = False
+2014-09-01 23:44:42,281 [7] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:45:55,846 [6] DEBUG SSO_GAD.Index - Favor introducir todos sus Datos
+2014-09-01 23:46:02,850 [7] DEBUG SSO_GAD.Index - Fin autenticacion RSA = False
+2014-09-01 23:46:02,850 [7] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:46:25,628 [6] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:46:25,628 [6] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:47:49,929 [6] DEBUG SSO_GAD.Index - Favor introducir todos sus Datos
+2014-09-01 23:47:59,876 [6] DEBUG SSO_GAD.Index - Formato Token Invalido
+2014-09-01 23:47:59,876 [6] DEBUG SSO_GAD.Index - autenticacion Fallida
+2014-09-01 23:48:50,423 [7] DEBUG SSO_GAD.Index - Fin autenticacion RSA = False
+2014-09-01 23:48:50,471 [7] DEBUG SSO_GAD.Index - Usuario o Token Inconrrectos
+2014-09-01 23:49:01,313 [6] DEBUG SSO_GAD.Index - Favor introducir todos sus Datos
+2014-09-01 23:49:09,437 [7] DEBUG SSO_GAD.Index - Favor introducir todos sus Datos
+2014-09-01 23:49:20,700 [13] DEBUG SSO_GAD.Index - Fin autenticacion RSA = True
+2014-09-01 23:49:20,701 [13] DEBUG SSO_GAD.Index - Usuario autenticado
+2014-09-01 23:49:20,774 [7] DEBUG SSO_GAD.welcome - Recibiendo Datos
+2014-09-01 23:49:20,774 [7] DEBUG SSO_GAD.welcome - Usuario jurquia
+2014-09-01 23:49:20,774 [7] DEBUG SSO_GAD.welcome - Recuperando Contraseña
+2014-09-01 23:49:20,788 [7] DEBUG SSO_GAD.welcome - Leyendo Parametros
+2014-09-01 23:49:21,260 [7] DEBUG SSO_GAD.welcome - Contraseña recuperada 
+2014-09-01 23:49:21,265 [7] DEBUG SSO_GAD.welcome - Cookie JSESSIONID NO ENCONTRADA
+2014-09-01 23:49:21,283 [7] DEBUG SSO_GAD.welcome - Creando HttpRequest...
+2014-09-01 23:49:21,283 [7] DEBUG SSO_GAD.welcome - Enviando Parametros...
+2014-09-01 23:49:22,055 [7] DEBUG SSO_GAD.welcome - Creando HttpRequest...
+2014-09-01 23:49:22,236 [7] DEBUG SSO_GAD.welcome - Cookie JSESSIONID con valor A52EFFEC4B4D75DAEAC6B9C6EFB5DFAB establecida
+2014-09-01 23:49:22,237 [7] DEBUG SSO_GAD.welcome - Recibiendo respuesta  del Sitio 
+ comienzo...
+2014-09-01 23:49:22,237 [7] DEBUG SSO_GAD.welcome - Estableciendo URL...
+2014-09-01 23:49:22,237 [7] DEBUG SSO_GAD.welcome - URL>>https://s361717226.onlinehome.us:8080/webclient/WebClient.jsf;jsessionid=A52EFFEC4B4D75DAEAC6B9C6EFB5DFAB
+2014-09-01 23:49:22,237 [7] DEBUG SSO_GAD.welcome - Cerrando conexiones...
+2014-09-01 23:49:22,237 [7] DEBUG SSO_GAD.welcome - El valor de la cookie JSESSIONID en el navegador es:A52EFFEC4B4D75DAEAC6B9C6EFB5DFAB
+2014-09-01 23:51:15,859 [6] DEBUG SSO_GAD.Index - Favor introducir todos sus Datos
+2014-09-01 23:51:29,040 [7] DEBUG SSO_GAD.Index - Fin autenticacion RSA = False
+2014-09-01 23:51:35,774 [6] DEBUG SSO_GAD.Index - Fin autenticacion RSA = True
+2014-09-01 23:51:35,775 [6] DEBUG SSO_GAD.Index - Usuario autenticado
+2014-09-01 23:51:35,934 [7] DEBUG SSO_GAD.welcome - Recibiendo Datos
+2014-09-01 23:51:35,934 [7] DEBUG SSO_GAD.welcome - Usuario fvelasco
+2014-09-01 23:51:35,934 [7] DEBUG SSO_GAD.welcome - Recuperando Contraseña
+2014-09-01 23:51:35,955 [7] DEBUG SSO_GAD.welcome - Leyendo Parametros
+2014-09-01 23:51:36,471 [7] ERROR SSO_GAD.welcome - System.NullReferenceException: Object reference not set to an instance of an object.
+   at SSO_GAD.welcome.RetrievePassFromLDAP(String user) in c:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\welcome.aspx.cs:line 198
+   at SSO_GAD.welcome.Page_Load(Object sender, EventArgs e) in c:\Users\JoseMario\Documents\Visual Studio 2013\Projects\SSO_GAD\SSO_GAD\welcome.aspx.cs:line 155
+2014-09-02 00:04:55,682 [7] DEBUG SSO_GAD.Index - Formato Token Invalido

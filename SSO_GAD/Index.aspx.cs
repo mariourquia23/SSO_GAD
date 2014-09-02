@@ -61,6 +61,7 @@ namespace SSO_GAD
         }
         private void errorLabel(String mensaje)
         {
+            Login1.FailureText = "";
             Login1.FailureText = mensaje;
             this.log.Debug(mensaje);
        
@@ -80,23 +81,32 @@ namespace SSO_GAD
 
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            if (this.authenticated(this.Login1.UserName, this.Login1.Password))
+            if (this.Login1.Password.Trim().Length > 0 && this.Login1.UserName.Trim().Length > 0)
             {
-                this.Session["user"] = this.Login1.UserName;
-                
-                this.Session["pass"] = this.Login1.Password;
-                e.Authenticated = true;
-                this.log.Debug("Usuario autenticado");
-                
-                
 
-            }
-            else
-            {
-                e.Authenticated = false;
-                this.log.Debug("autenticacion Fallida");
-            }
 
+
+                if (this.authenticated(this.Login1.UserName, this.Login1.Password))
+                {
+                    this.Session["user"] = this.Login1.UserName;
+
+                    this.Session["pass"] = this.Login1.Password;
+                    e.Authenticated = true;
+                    this.log.Debug("Usuario autenticado");
+
+                }
+                else
+                {
+                    e.Authenticated = false;
+                    
+                    Login1.FailureText = "Usuario o Token Incorrectos";
+                    
+
+                }
+            }
+            else {
+                errorLabel("Favor introducir todos sus Datos");
+            }
         }
     }
 }

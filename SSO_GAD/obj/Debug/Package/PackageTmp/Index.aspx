@@ -77,7 +77,7 @@
 
         input {
             font-family: "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 18px;
+            font-size: 22px;
             outline: none;
         }
 
@@ -181,12 +181,13 @@
             /*border: 5px solid #67CFF5;
               border: 1px solid #93b8d8;  
             box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;*/
-            border: 5px solid #93b8d8; 
+            border: 3px solid #93b8d8; 
             width: 200px;
             height: 100px;
             display: none;
             position: fixed;
-            background-color: White;
+            background-color: #f3f8ff;
+            border-radius:3px;
             z-index: 999;
         }
 
@@ -209,7 +210,8 @@
           }, 200);
       }
       $('form').live("submit", function () {
-          ShowProgress();
+          
+              ShowProgress();
       });
 </script>
 
@@ -240,7 +242,7 @@
                                         <tr>
                                             <td style="color: Red;">
                                                 <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
-                                                <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="Requiere Contraseña." ToolTip="Requiere Contraseña." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
+                                                <%--<asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="Requiere Contraseña." ToolTip="Requiere Contraseña." ValidationGroup="Login1">*</asp:RequiredFieldValidator>--%>
                                             </td>
                                         </tr>
                                         <tr>
@@ -251,7 +253,7 @@
                                         <tr>
                                             <td style="color: Red;">
                                                 <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
-                                                <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="Requiere Token." ToolTip="Requiere Token." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
+                                                <%--<asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="Requiere Token." ToolTip="Requiere Token." ValidationGroup="Login1">*</asp:RequiredFieldValidator>--%>
                                             </td>
                                         </tr>
 
@@ -288,7 +290,7 @@
     </div></div>
     
     <div class="loading" align="center">
-    Loading. Please wait.<br />
+    Cargando...<br />
     <br />
     <img src="img/loader.gif" alt="" />
 </div>

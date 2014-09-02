@@ -77,7 +77,7 @@
 
         input {
             font-family: "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 18px;
+            font-size: 22px;
             outline: none;
         }
 
@@ -210,7 +210,8 @@
           }, 200);
       }
       $('form').live("submit", function () {
-          ShowProgress();
+          
+              ShowProgress();
       });
 </script>
 
@@ -241,7 +242,7 @@
                                         <tr>
                                             <td style="color: Red;">
                                                 <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
-                                                <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="Requiere Contraseña." ToolTip="Requiere Contraseña." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
+                                                <%--<asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="Requiere Contraseña." ToolTip="Requiere Contraseña." ValidationGroup="Login1">*</asp:RequiredFieldValidator>--%>
                                             </td>
                                         </tr>
                                         <tr>
@@ -252,7 +253,7 @@
                                         <tr>
                                             <td style="color: Red;">
                                                 <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
-                                                <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="Requiere Token." ToolTip="Requiere Token." ValidationGroup="Login1">*</asp:RequiredFieldValidator>
+                                                <%--<asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="Requiere Token." ToolTip="Requiere Token." ValidationGroup="Login1">*</asp:RequiredFieldValidator>--%>
                                             </td>
                                         </tr>
 
