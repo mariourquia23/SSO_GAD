@@ -24,22 +24,21 @@ namespace SSO_GAD
                 
                 //Declaracion de objeto
                 //-----------Banrep
-                
-                //co.gov.banrep.osb.peticionWSAutenticarUsuarioRSA peticion = new co.gov.banrep.osb.peticionWSAutenticarUsuarioRSA();
-                //co.gov.banrep.osb.respuestaWSAutenticarUsuarioRSA respuesta = new co.gov.banrep.osb.respuestaWSAutenticarUsuarioRSA();
-                //co.gov.banrep.osb.AdministradorRSAWS rsa= new co.gov.banrep.osb.AdministradorRSAWS();
-                
-                //this.log.Debug("Comenzando autenticacion con RSA");
-                //peticion.usuario = user.TrimEnd().TrimStart();
-                //peticion.passCode = pwd.TrimEnd().TrimStart();
-                //respuesta = rsa.autenticarRSA(peticion);
-                //result = respuesta.resultado;
-                
+
+                co.gov.banrep.osb.peticionWSAutenticarUsuarioRSA peticion = new co.gov.banrep.osb.peticionWSAutenticarUsuarioRSA();
+                co.gov.banrep.osb.respuestaWSAutenticarUsuarioRSA respuesta = new co.gov.banrep.osb.respuestaWSAutenticarUsuarioRSA();
+                co.gov.banrep.osb.AdministradorRSAWS rsa = new co.gov.banrep.osb.AdministradorRSAWS();
+
+                this.log.Debug("Comenzando autenticacion con RSA");
+                peticion.usuario = user.TrimEnd().TrimStart();
+                peticion.passCode = pwd.TrimEnd().TrimStart();
+                respuesta = rsa.autenticarRSA(peticion);
+                result = respuesta.resultado;
                 
                 //------------GLT
 
-                GLTWS1.EmulacionRSA rsaglt = new GLTWS1.EmulacionRSA();
-                result = rsaglt.autenticarRSA(Int32.Parse(pwd.TrimEnd().TrimStart()), user.TrimEnd().TrimStart());
+                //GLTWS1.EmulacionRSA rsaglt = new GLTWS1.EmulacionRSA();
+                //result = rsaglt.autenticarRSA(Int32.Parse(pwd.TrimEnd().TrimStart()), user.TrimEnd().TrimStart());
                
                 
                 

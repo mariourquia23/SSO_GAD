@@ -6,35 +6,47 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\JoseMario\Desktop\SSO</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\JoseMario\Desktop\SSO\Banrep</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/log4net.dll">
       <publishTime>11/18/2013 05:51:44</publishTime>
     </File>
     <File Include="bin/SSO_GAD.dll">
-      <publishTime>08/28/2014 17:32:04</publishTime>
+      <publishTime>09/16/2014 12:09:54</publishTime>
     </File>
     <File Include="bin/SSO_GAD.pdb">
       <publishTime>08/28/2014 16:57:20</publishTime>
     </File>
     <File Include="bin/SSO_GAD.XmlSerializers.dll">
-      <publishTime>08/28/2014 17:32:05</publishTime>
+      <publishTime>09/16/2014 12:09:54</publishTime>
+    </File>
+    <File Include="img/favicon.ico">
+      <publishTime>09/02/2014 08:02:01</publishTime>
+    </File>
+    <File Include="img/loader.gif">
+      <publishTime>09/02/2014 08:02:01</publishTime>
     </File>
     <File Include="img/logo.png">
-      <publishTime>08/15/2014 10:08:51</publishTime>
+      <publishTime>09/02/2014 08:01:54</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>08/28/2014 16:48:26</publishTime>
+      <publishTime>09/02/2014 16:43:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.2.js">
+      <publishTime>08/15/2014 09:25:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.2.min.js">
+      <publishTime>08/15/2014 09:25:04</publishTime>
     </File>
     <File Include="Web References/GLTWS1/Reference.map">
-      <publishTime>08/28/2014 16:54:47</publishTime>
+      <publishTime>09/02/2014 08:02:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/28/2014 17:09:14</publishTime>
+      <publishTime>09/16/2014 12:09:55</publishTime>
     </File>
     <File Include="welcome.aspx">
-      <publishTime>08/28/2014 17:08:24</publishTime>
+      <publishTime>09/09/2014 09:50:17</publishTime>
     </File>
   </ItemGroup>
 </Project>

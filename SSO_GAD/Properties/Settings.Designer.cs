@@ -34,15 +34,6 @@ namespace SSO_GAD.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://s361717226.onlinehome.us:8080/login")]
-        public string WebClient_URL {
-            get {
-                return ((string)(this["WebClient_URL"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("74.208.202.242")]
         public string LDAP_Host {
             get {
@@ -70,15 +61,6 @@ namespace SSO_GAD.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://s361717226.onlinehome.us:8080/webclient/WebClient.jsf")]
-        public string WebClient_URL_SSO {
-            get {
-                return ((string)(this["WebClient_URL_SSO"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
         [global::System.Configuration.DefaultSettingValueAttribute("http://74.208.202.242:8050/administradorRSAws.asmx")]
         public string SSO_GAD_co_gov_banrep_osb_AdministradorRSAWS {
@@ -94,6 +76,33 @@ namespace SSO_GAD.Properties {
         public string SSO_GAD_GLTWS1_EmulacionRSA {
             get {
                 return ((string)(this["SSO_GAD_GLTWS1_EmulacionRSA"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://labsserver:4331/login")]
+        public string WebClient_URL {
+            get {
+                return ((string)(this["WebClient_URL"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://labsserver/webclient/WebApplet.jsf")]
+        public string WebClient_URL_SSO {
+            get {
+                return ((string)(this["WebClient_URL_SSO"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("y")]
+        public string useRequestUrl {
+            get {
+                return ((string)(this["useRequestUrl"]));
             }
         }
     }

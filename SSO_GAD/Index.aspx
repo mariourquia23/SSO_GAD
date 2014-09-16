@@ -216,7 +216,8 @@
 </script>
 
 </head>
-<body><form id="form2" runat="server">
+<body>
+    <form id="form2" runat="server">
     <div id="PanelPadre">
     <div id="panel">
         <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png" />

@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<html xmlns="http://www.w3.org/1999/xhtml" runat="server" id="html">
+<head runat="server" id="head">
     <title>GOanySSO portal</title>
     <style type="text/css">
         
@@ -76,10 +76,12 @@ input {
 
 
 
-    </style>
+
+    </style>   
+  <%=redireccionar() %>
 </head>
-<body>
- 
+<body  runat="server" id="body">
+ <form runat="server">
     <div id="panel">
     
         <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png" />
@@ -87,19 +89,18 @@ input {
     <br /><asp:Label ID="Label1" runat="server" style="text-align: left" Text="Label" Visible="False"></asp:Label>
     
         <div id="container">
-            
-            
-           
-            <form runat="server">
             <asp:TextBox ID="TextBox1" runat="server"   TextMode="MultiLine" ></asp:TextBox>
-            </form>
-            
-           </div> <div>
+            </div>
+        <div>
              <asp:HyperLink ID="HyperLink1" runat="server" Visible="False">ir a GoAny WebClient</asp:HyperLink>
            
             
-        </div></div>
-    
+        </div>
+
+        
+
+    </div>         
+</form>    
 </body>
 </html>
 

@@ -16,7 +16,7 @@ namespace SSO_GAD
 {
     public partial class welcome : System.Web.UI.Page
     {
-        protected Uri finalURL;
+        protected Uri finalURL{get;set;}
         protected bool succes = false;
         public static string Pass;
         public static string Username;
@@ -108,7 +108,24 @@ namespace SSO_GAD
             this.TextBox1.Text = this.TextBox1.Text + "\n  fin.";
             this.TextBox1.Text = this.TextBox1.Text + "\nEstableciendo URL...";
             this.log.Debug("Estableciendo URL...");
-            String str2 = String.Format("{0};jsessionid={1}", Properties.Settings.Default.WebClient_URL_SSO,cookie);
+            
+            String str2=null; 
+            if (Properties.Settings.Default.useRequestUrl.Length>0)
+            {
+                Uri UrlConfig=new Uri(Properties.Settings.Default.WebClient_URL_SSO);
+                //str2 = String.Format("{0};jsessionid={1}", Request.Url.AbsoluteUri, cookie);
+                str2=String.Format("{0}://{1}{2};jsessionid={3}",
+                    Request.Url.Scheme,
+                    Request.Url.Authority,
+                    UrlConfig.AbsolutePath,
+                    cookie);
+                this.log.Debug(String.Format("Utilizar Request URL = true \nURL creada de Request {0} ", str2));
+
+            }
+            else
+            {
+                str2 = String.Format("{0};jsessionid={1}", Properties.Settings.Default.WebClient_URL_SSO, cookie);
+            }            
             this.log.Debug("URL>>"+ str2);
             this.TextBox1.Text = this.TextBox1.Text + "ok\n";
             this.HyperLink1.NavigateUrl = str2;
@@ -126,10 +143,12 @@ namespace SSO_GAD
             else
                 this.log.Debug(String.Format("Cookie {0} NO ENCONTRADA", cookieName));
             succes = true;
-            //head.InnerHtml = head.InnerHtml + "<meta http-equiv=\"refresh\" content=\"5\" ; url="+finalURL.ToString()+" />";
-            /*Response.Redirect(str2,false);
-            Response.End;
-        */
+
+            
+            
+           
+            
+            
 
         }
         protected String redireccionar()
@@ -140,6 +159,7 @@ namespace SSO_GAD
             }
             return "";
         }
+        
 
 
         protected void Page_Load(object sender, EventArgs e)
@@ -158,8 +178,22 @@ namespace SSO_GAD
 
             }
             
-
-                string url = Properties.Settings.Default.WebClient_URL;
+            String url = null;
+            if (Properties.Settings.Default.useRequestUrl.Length > 0)
+            {
+                Uri UrlConfig = new Uri(Properties.Settings.Default.WebClient_URL);                
+                url = String.Format("{0}://{1}{2}",
+                    Request.Url.Scheme,
+                    Request.Url.Authority,
+                    UrlConfig.AbsolutePath
+                    );
+                this.log.Debug(String.Format("Utilizar Request URL = true \nURL creada de Request {0} ", url));
+            }
+            else
+            {
+                url = Properties.Settings.Default.WebClient_URL;
+            }   
+                
                 ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(this.AcceptAllCertifications);                             
                 this.metodoPost(url);
             }

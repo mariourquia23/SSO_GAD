@@ -13,6 +13,15 @@ namespace SSO_GAD {
     public partial class welcome {
         
         /// <summary>
+        /// Control html.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlElement html;
+        
+        /// <summary>
         /// Control head.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,15 @@ namespace SSO_GAD {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlHead head;
+        
+        /// <summary>
+        /// Control body.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl body;
         
         /// <summary>
         /// Control Image1.
