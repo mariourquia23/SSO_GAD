@@ -21,7 +21,8 @@ namespace SSO_GAD
             bool result=false;
             try
             {
-                
+             
+   
                 //Declaracion de objeto
                 //-----------Banrep
 
@@ -33,8 +34,7 @@ namespace SSO_GAD
                 peticion.usuario = user.TrimEnd().TrimStart();
                 peticion.passCode = pwd.TrimEnd().TrimStart();
                 respuesta = rsa.autenticarRSA(peticion);
-                result = respuesta.resultado;
-                
+                result = respuesta.resultado;                
                 //------------GLT
 
                 //GLTWS1.EmulacionRSA rsaglt = new GLTWS1.EmulacionRSA();

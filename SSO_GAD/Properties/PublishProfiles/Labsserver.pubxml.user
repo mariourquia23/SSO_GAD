@@ -10,43 +10,46 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/log4net.dll">
-      <publishTime>09/02/2014 08:02:02</publishTime>
+      <publishTime>11/18/2013 05:51:44</publishTime>
     </File>
     <File Include="bin/SSO_GAD.dll">
-      <publishTime>09/22/2014 09:24:21</publishTime>
+      <publishTime>09/23/2014 17:16:14</publishTime>
     </File>
     <File Include="bin/SSO_GAD.pdb">
-      <publishTime>09/22/2014 09:24:21</publishTime>
+      <publishTime>09/23/2014 17:09:18</publishTime>
+    </File>
+    <File Include="bin/SSO_GAD.XmlSerializers.dll">
+      <publishTime>09/23/2014 17:16:15</publishTime>
     </File>
     <File Include="htmlpost.html">
       <publishTime>09/19/2014 08:49:04</publishTime>
     </File>
     <File Include="img/favicon.ico">
-      <publishTime>09/02/2014 08:02:02</publishTime>
+      <publishTime>09/02/2014 08:02:01</publishTime>
     </File>
     <File Include="img/loader.gif">
-      <publishTime>09/02/2014 08:02:02</publishTime>
+      <publishTime>09/02/2014 08:02:01</publishTime>
     </File>
     <File Include="img/logo.png">
-      <publishTime>09/02/2014 08:02:02</publishTime>
+      <publishTime>09/02/2014 08:01:54</publishTime>
     </File>
     <File Include="Index.aspx">
-      <publishTime>09/02/2014 16:43:13</publishTime>
+      <publishTime>09/23/2014 16:49:17</publishTime>
     </File>
     <File Include="Scripts/jquery-1.8.2.js">
-      <publishTime>09/02/2014 08:02:01</publishTime>
+      <publishTime>08/15/2014 09:25:04</publishTime>
     </File>
     <File Include="Scripts/jquery-1.8.2.min.js">
-      <publishTime>09/02/2014 08:02:01</publishTime>
+      <publishTime>08/15/2014 09:25:04</publishTime>
     </File>
     <File Include="Web References/GLTWS1/Reference.map">
-      <publishTime>09/02/2014 08:02:01</publishTime>
+      <publishTime>09/02/2014 08:02:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/22/2014 09:24:22</publishTime>
+      <publishTime>09/23/2014 17:16:15</publishTime>
     </File>
     <File Include="WebFormPost.aspx">
-      <publishTime>09/21/2014 21:32:20</publishTime>
+      <publishTime>09/23/2014 16:55:46</publishTime>
     </File>
     <File Include="welcome.aspx">
       <publishTime>09/09/2014 09:50:17</publishTime>

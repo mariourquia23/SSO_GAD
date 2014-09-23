@@ -18,19 +18,21 @@ namespace SSO_GAD
         public static string Pass;
         public static string Username;
         private readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+        protected String redirectHtML;
 
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {          
             
             if (!base.IsPostBack)
             {
-                try
+               try
                 {
                     this.log.Debug("Recibiendo Datos");
-                    Username = Request.Params["username"].Trim();
-                    this.log.Debug(String.Format("Usuario {0}", Username));
-                    Pass = Request.Params["password"].Trim();
-                    if (Username.Length < 1 && Pass.Length <1 )
+                    Username = Request.Params["username"]!=null?Request.Params["username"].Trim():"";
+                    this.log.Debug(String.Format("Usuario \"{0}\"", Username));
+                    Pass = Request.Params["password"]!=null?Request.Params["password"].Trim():"";
+                    this.log.Debug(String.Format("tamaño de contraseña {0}", Pass.Length));
+                    if (Username.Length > 1 && Pass.Length >1) 
                     {
                         String url = null;
                         if (Properties.Settings.Default.useRequestUrl.Length > 0)
@@ -55,12 +57,16 @@ namespace SSO_GAD
                     }
                     else 
                     {
-                        this.log.Debug("No se Encontraron las credenciales");
+                        this.titulo.Visible = true;
+                        this.TextBox1.Text+="\n\n \t\t\tNo se recibieron Credenciales";                        
+                        this.log.Debug("No se Han recibido credenciales");
                     }
                 }
                 catch (Exception ex)
                 {
+                    this.titulo.Visible = true;
                     this.log.Debug(ex.ToString());
+                    this.TextBox1.Text += ex.ToString();
                 }
                 
             }
@@ -103,6 +109,8 @@ namespace SSO_GAD
             StreamReader reader = new StreamReader(response.GetResponseStream());
       
             resultado = response.Headers["X-GDX-Reply"].ToString();
+            if (!resultado.Contains("200 Welcome,"))
+                return resultado;            
             string cookie = "";
             if (response.Cookies.Count > 0)
             {
@@ -185,12 +193,17 @@ namespace SSO_GAD
         {
             if (succes)
             {
-                if (resultado.Contains("200 Welcome,"))
-                    head.InnerHtml = String.Format("<meta http-equiv=\"refresh\" content=\"0; url={0}\" />", finalURL.ToString());
-                else
-                    Server.Transfer("index.aspx");
-                }
-            
+                redirectHtML = String.Format("\n<meta http-equiv=\"refresh\" content=\"0; url={0}\" />", finalURL.ToString());
+                //head.InnerHtml = String.Format("\n<meta http-equiv=\"refresh\" content=\"0; url={0}\" />", finalURL.ToString());
+                panel.InnerHtml = "<asp:Image ID=\"Image1\" ImageUrl=\"~/img/logo.png\" /><br /><br /><div class=\"loading\" align=\"center\">Cargando...<br /><br /><img src=\"img/loader.gif\" /></div>";
+            }
+            else
+            {
+                redirectHtML = "";
+                this.titulo.Visible = true;
+                this.TextBox1.Text += "\n\n\t\t\t Respuesta del Servidor GTA\n\n";
+                this.TextBox1.Text += resultado;
+            }
         }
 
         protected internal void transferCookieToApplication(Cookie c, string host)

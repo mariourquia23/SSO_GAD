@@ -27,7 +27,7 @@
       <Value Profile="(Default)">https://labsserver/webclient/WebApplet.jsf</Value>
     </Setting>
     <Setting Name="useRequestUrl" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">y</Value>
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

@@ -178,9 +178,6 @@
         .loading {
             font-family: Arial;
             font-size: 10pt;
-            /*border: 5px solid #67CFF5;
-              border: 1px solid #93b8d8;  
-            box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;*/
             border: 3px solid #93b8d8; 
             width: 200px;
             height: 100px;

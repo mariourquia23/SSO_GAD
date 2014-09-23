@@ -99,7 +99,7 @@ namespace SSO_GAD.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("y")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string useRequestUrl {
             get {
                 return ((string)(this["useRequestUrl"]));
