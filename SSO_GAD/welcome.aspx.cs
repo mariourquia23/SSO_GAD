@@ -93,6 +93,8 @@ namespace SSO_GAD
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             StreamReader reader = new StreamReader(response.GetResponseStream());
             this.TextBox1.Text = this.TextBox1.Text + "ok";
+            string header = "";
+            header = response.Headers["X-GDX-Reply"];          
             string cookie = "";
             if (response.Cookies.Count > 0)
             {

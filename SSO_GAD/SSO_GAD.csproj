@@ -85,6 +85,7 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\GLTWS1\emulacionRSA.wsdl" />
+    <Content Include="htmlpost.html" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\loader.gif" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -109,6 +110,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Index.aspx" />
+    <Content Include="WebFormPost.aspx" />
     <Content Include="welcome.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +137,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormPost.aspx.cs">
+      <DependentUpon>WebFormPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormPost.aspx.designer.cs">
+      <DependentUpon>WebFormPost.aspx</DependentUpon>
     </Compile>
     <Compile Include="welcome.aspx.cs">
       <DependentUpon>welcome.aspx</DependentUpon>

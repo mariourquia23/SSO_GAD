@@ -13,10 +13,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>09/02/2014 08:02:02</publishTime>
     </File>
     <File Include="bin/SSO_GAD.dll">
-      <publishTime>09/16/2014 11:51:50</publishTime>
+      <publishTime>09/22/2014 09:24:21</publishTime>
     </File>
     <File Include="bin/SSO_GAD.pdb">
-      <publishTime>09/16/2014 11:51:50</publishTime>
+      <publishTime>09/22/2014 09:24:21</publishTime>
+    </File>
+    <File Include="htmlpost.html">
+      <publishTime>09/19/2014 08:49:04</publishTime>
     </File>
     <File Include="img/favicon.ico">
       <publishTime>09/02/2014 08:02:02</publishTime>
@@ -40,7 +43,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>09/02/2014 08:02:01</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/16/2014 11:51:53</publishTime>
+      <publishTime>09/22/2014 09:24:22</publishTime>
+    </File>
+    <File Include="WebFormPost.aspx">
+      <publishTime>09/21/2014 21:32:20</publishTime>
     </File>
     <File Include="welcome.aspx">
       <publishTime>09/09/2014 09:50:17</publishTime>
